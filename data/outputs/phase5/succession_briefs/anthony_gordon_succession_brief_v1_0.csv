@@ -1,0 +1,3 @@
+Succession_Rank,Player,Replacement_For,Age,Decision_Tier,Risk_Adjusted_Score,Succession_Score,Evidence_Band,Recruitment_Risk,Development_Profile,Validation_Flag_Count,Validation_Flags,Suggested_Action,Final_Decision_State,Executive_Status,Executive_Rationale
+1,Kristian Arnstad,Anthony Gordon,21.0,PRIORITY TARGET,74.1,64.5,HIGH,LOW,DEVELOPMENT,1,DECISION_UPLIFT,TACTICAL VALIDATION,SCOUTING REQUIRED,AWAITING SCOUTING VALIDATION,high evidence; low recruitment risk; development; next step: tactical validation
+2,Tobias Bech,Anthony Gordon,23.0,STRONG SHORTLIST,69.2,62.4,HIGH,LOW,PRIME ENTRY,0,NONE,PROGRESS TO SCOUTING,SCOUTING REQUIRED,AWAITING SCOUTING VALIDATION,high evidence; low recruitment risk; prime entry; next step: progress to scouting

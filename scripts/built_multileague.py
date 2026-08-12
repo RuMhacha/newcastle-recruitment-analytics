@@ -1,0 +1,44 @@
+        path = RAW_DIR / f"{prefix}_{table}_2025_26.csv"
+
+        print(f"Loading: {path}")
+
+        tables[table] = pd.read_csv(path)
+
+    return tables
+
+
+# Test the reusable loader with Eredivisie
+ered = load_league_tables("eredivisie")
+
+print("\nEredivisie raw tables:")
+for table_name, df in ered.items():
+    print(table_name, df.shape)
+
+# --------------------------------------------------
+# Clean FBref tables
+# --------------------------------------------------
+
+def clean_fbref_table(df):
+    df = df.copy()
+
+    if "Player" in df.columns:
+        df = df[
+            ~df["Player"].isin(
+                ["Player", "Squad Total", "Opponent Total"]
+            )
+        ].copy()
+
+    return df
+
+
+ered_clean = {}
+
+for table_name, df in ered.items():
+    ered_clean[table_name] = clean_fbref_table(df)
+
+
+print("\nEredivisie cleaned tables:")
+
+for table_name, df in ered_clean.items():
+    print(table_name, df.shape)
+

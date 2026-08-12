@@ -1,0 +1,10 @@
+Player,Replacement_For,Decision_Tier,Suggested_Action,Required_Validation_Work,Role_Fit_Score,Tactical_Fit_Score,Technical_Fit_Score,Physical_Fit_Score,Development_Confidence,Evidence_Confidence,Scout_Recommendation,Scout_Notes,Validation_Complete,Validated_Complete_Record,Final_Recommendation_Eligible
+Kristian Arnstad,Anthony Gordon,PRIORITY TARGET,TACTICAL VALIDATION,ROLE FIT | TACTICAL FIT,,,,,,,PENDING,,False,False,False
+Tobias Bech,Anthony Gordon,STRONG SHORTLIST,PROGRESS TO SCOUTING,ROLE FIT,,,,,,,PENDING,,False,False,False
+Thomas Jørgensen,Bruno Guimaraes,PRIORITY TARGET,LIVE / VIDEO SCOUTING,ROLE FIT | DEVELOPMENT REVIEW | VIDEO / LIVE SCOUTING,,,,,,,PENDING,,False,False,False
+Rihito Yamamoto,Bruno Guimaraes,PRIORITY TARGET,TACTICAL VALIDATION,ROLE FIT | TACTICAL FIT,,,,,,,PENDING,,False,False,False
+Darío Osorio,Bruno Guimaraes,STRONG SHORTLIST,VIDEO VALIDATION,ROLE FIT | EVIDENCE REVIEW | VIDEO / LIVE SCOUTING,,,,,,,PENDING,,False,False,False
+Victor Froholdt,Sandro Tonali,PRIORITY TARGET,LIVE / VIDEO SCOUTING,ROLE FIT | DEVELOPMENT REVIEW | VIDEO / LIVE SCOUTING,,,,,,,PENDING,,False,False,False
+Kodai Sano,Sandro Tonali,PRIORITY TARGET,TACTICAL VALIDATION,ROLE FIT | TACTICAL FIT,,,,,,,PENDING,,False,False,False
+Irakli Yegoian,Sandro Tonali,PRIORITY TARGET,TACTICAL VALIDATION,ROLE FIT | TACTICAL FIT,,,,,,,PENDING,,False,False,False
+Max Ejdum,Sandro Tonali,STRONG SHORTLIST,LIVE / VIDEO SCOUTING,ROLE FIT | EVIDENCE REVIEW | DEVELOPMENT REVIEW | VIDEO / LIVE SCOUTING,,,,,,,PENDING,,False,False,False
