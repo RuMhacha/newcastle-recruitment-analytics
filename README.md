@@ -1,16 +1,50 @@
 # Newcastle United Recruitment & Succession Analytics
 
-A reproducible football recruitment analytics pipeline designed to identify,
-prioritise, validate, and communicate potential succession candidates for
-Newcastle United.
+A reproducible, Python-based decision-support framework for football recruitment and succession planning.
 
-The project combines statistical player profiling, succession modelling,
-recruitment-risk assessment, decision scoring, scouting validation, and
-human decision gates.
+This project demonstrates how player-performance data can be transformed into structured recruitment decisions through statistical profiling, role-specific analysis, risk adjustment, scouting validation, and human decision governance.
 
-The system is deliberately designed so that statistical analysis can identify
-and prioritise recruitment candidates, but cannot independently approve a
-player for recruitment without validated human scouting evidence.
+**Player profiling → recruitment scoring → risk adjustment → executive shortlisting → scouting validation → human decision gate → succession planning**
+
+## What this project demonstrates
+
+- Multi-league player profiling and recruitment analysis
+- Role-specific candidate identification
+- Risk-adjusted recruitment scoring
+- Structured scouting-validation workflows
+- Human-in-the-loop decision governance
+- Succession planning for priority squad roles
+- Reproducible QA and frozen analytical releases
+
+> **Decision-support principle:** Analytics should narrow the search, quantify uncertainty, and improve decisions — not remove the need for football judgement.
+
+## Decision pipeline
+
+```text
+Player & Performance Data
+          │
+          ▼
+ Recruitment Metrics
+          │
+          ▼
+Role / Player Profiling
+          │
+          ▼
+Risk-Adjusted Decision Model
+          │
+          ▼
+  Executive Shortlist
+          │
+          ▼
+  Scouting Validation
+          │
+          ▼
+   Human Decision Gate
+          │
+          ├──────────────► Recruitment Decision
+          │
+          └──────────────► Succession Planning
+```
 
 ---
 
