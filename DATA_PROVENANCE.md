@@ -33,3 +33,20 @@ the underlying source football datasets.
 The system is designed as decision support only. Statistical outputs do not
 constitute final recruitment approval. Final recruitment decisions remain
 subject to validated human scouting and football-domain assessment.
+
+## Licensing scope
+
+The MIT License in this repository applies to the original software code and
+project documentation authored for this project.
+
+It does not grant rights to third-party source football datasets or other
+third-party material from which analytical outputs may have been derived.
+
+Derived analytical CSV outputs included in this repository are provided for
+portfolio demonstration and methodological review. Their inclusion should not
+be interpreted as redistribution or relicensing of the underlying source
+datasets.
+
+Users wishing to reproduce the analysis should obtain appropriate source data
+independently and comply with the applicable provider terms, licensing
+conditions, and attribution requirements.
