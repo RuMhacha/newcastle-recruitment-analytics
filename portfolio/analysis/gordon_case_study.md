@@ -25,6 +25,10 @@ The initial analysis produced an important distinction: the player who most clos
 
 ## Decision Analysis
 
+![Anthony Gordon succession candidates — initial suitability versus final risk-adjusted decision score](../figures/gordon_decision_comparison.png)
+
+The decision layer materially reshaped the initial shortlist. Candidates shown in dark blue strengthened after evidence confidence, development potential and recruitment risk were incorporated, while candidates shown in burnt orange were downgraded. The comparison demonstrates why statistical similarity alone is insufficient for recruitment decision-making: the strongest initial profile is not necessarily the strongest decision-ready option.
+
 ## Key Finding
 
 ## Recommendation
