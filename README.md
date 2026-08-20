@@ -4,9 +4,62 @@ A reproducible, Python-based decision-support framework for football recruitment
 
 This project demonstrates how player-performance data can be transformed into structured recruitment decisions through statistical profiling, role-specific analysis, risk adjustment, scouting validation, and human decision governance.
 
-**Player profiling → recruitment scoring → risk adjustment → executive shortlisting → scouting validation → human decision gate → succession planning**
+The project models succession planning for three Newcastle United players:
 
-## What this project demonstrates
+- Anthony Gordon
+- Bruno Guimarães
+- Sandro Tonali
+
+Rather than treating statistical similarity as a transfer recommendation, the framework progressively narrows candidates through role profiling, evidence assessment, development potential, recruitment risk and structured scouting validation.
+
+> **Decision-support principle:** Analytics should narrow the search, quantify uncertainty, and improve decisions — not remove the need for football judgement.
+
+---
+
+## Key Results
+
+### Anthony Gordon Succession
+
+**Priority target:** Kristian Arnstad  
+**Strong shortlist:** Tobias Bech
+
+### Bruno Guimarães Succession
+
+**Priority targets:** Thomas Jørgensen, Rihito Yamamoto  
+**Strong shortlist:** Darío Osorio
+
+### Sandro Tonali Succession
+
+**Priority targets:** Victor Froholdt, Kodai Sano, Irakli Yegoian  
+**Strong shortlist:** Max Ejdum
+
+These are analytical recruitment priorities rather than final transfer recommendations. Final approval remains subject to human scouting and football-domain assessment.
+
+---
+
+## Succession Case Studies
+
+### Anthony Gordon
+
+![Anthony Gordon succession decision comparison](portfolio/figures/gordon_decision_comparison.png)
+
+[Read the Anthony Gordon case study](portfolio/analysis/gordon_case_study.md)
+
+### Bruno Guimarães
+
+![Bruno Guimarães succession decision comparison](portfolio/figures/bruno_decision_comparison.png)
+
+[Read the Bruno Guimarães case study](portfolio/analysis/bruno_case_study.md)
+
+### Sandro Tonali
+
+![Sandro Tonali succession decision comparison](portfolio/figures/tonali_decision_comparison.png)
+
+[Read the Sandro Tonali case study](portfolio/analysis/tonali_case_study.md)
+
+---
+
+## What This Project Demonstrates
 
 - Multi-league player profiling and recruitment analysis
 - Role-specific candidate identification
@@ -16,15 +69,15 @@ This project demonstrates how player-performance data can be transformed into st
 - Succession planning for priority squad roles
 - Reproducible QA and frozen analytical releases
 
-> **Decision-support principle:** Analytics should narrow the search, quantify uncertainty, and improve decisions — not remove the need for football judgement.
+---
 
-## Decision pipeline
+## Decision Pipeline
 
 ```text
 Player & Performance Data
           │
           ▼
- Recruitment Metrics
+Recruitment Metrics
           │
           ▼
 Role / Player Profiling
@@ -33,13 +86,13 @@ Role / Player Profiling
 Risk-Adjusted Decision Model
           │
           ▼
-  Executive Shortlist
+Executive Shortlist
           │
           ▼
-  Scouting Validation
+Scouting Validation
           │
           ▼
-   Human Decision Gate
+Human Decision Gate
           │
           ├──────────────► Recruitment Decision
           │
@@ -48,23 +101,21 @@ Risk-Adjusted Decision Model
 
 ---
 
-## 1. Project Objective
+## Project Objective
 
 The project addresses three Newcastle United succession problems:
 
 - Anthony Gordon
-- Bruno Guimaraes
+- Bruno Guimarães
 - Sandro Tonali
 
-The analytical workflow is designed to answer five progressively narrower
-questions:
+The analytical workflow is designed to answer five progressively narrower questions:
 
 1. Which players are statistically plausible successors?
 2. Which candidates provide the strongest overall succession fit?
 3. How confident should Newcastle be in the available evidence?
 4. Which candidates warrant further scouting and validation?
-5. Has sufficient human evidence been collected to support a final
-   recruitment recommendation?
+5. Has sufficient human evidence been collected to support a final recruitment recommendation?
 
 The result is not simply a player ranking.
 
@@ -72,9 +123,7 @@ It is a staged recruitment decision-support system.
 
 ---
 
-## 2. Analytical Architecture
-
-The project follows the following decision pipeline:
+## Analytical Architecture
 
 ```text
 PLAYER DATA
@@ -126,11 +175,11 @@ Executive Reporting & Succession Briefs
 
 ---
 
-## 3. Core Design Principle
+## Core Design Principle
 
 A central principle of the project is:
 
-> Statistical recommendation is not the same as recruitment approval.
+> **Statistical recommendation is not the same as recruitment approval.**
 
 The analytical model is allowed to:
 
@@ -142,8 +191,7 @@ The analytical model is allowed to:
 - prioritise scouting activity;
 - create executive shortlists.
 
-The analytical model is **not** allowed to produce a final recruitment
-approval without completed human scouting evidence.
+The analytical model is **not** allowed to produce a final recruitment approval without completed human scouting evidence.
 
 This safeguard is implemented explicitly in Phase 4.
 
@@ -157,26 +205,21 @@ and is not eligible for final approval.
 
 ---
 
-## 4. Phase 1 — Succession Analytics
+## Phase 1 — Succession Analytics
 
 Phase 1 establishes the underlying candidate-identification framework.
 
-The purpose of this stage is to move from a broad player population toward
-players whose statistical profiles suggest potential suitability as
-successors to the target Newcastle players.
+The purpose of this stage is to move from a broad player population toward players whose statistical profiles suggest potential suitability as successors to the target Newcastle players.
 
-The output of this stage provides the analytical foundation for later
-decision modelling.
+The output of this stage provides the analytical foundation for later decision modelling.
 
-Phase 1 is concerned primarily with candidate discovery rather than final
-recruitment judgement.
+Phase 1 is concerned primarily with candidate discovery rather than final recruitment judgement.
 
 ---
 
-## 5. Phase 2 — Recruitment Decision Model
+## Phase 2 — Recruitment Decision Model
 
-Phase 2 converts succession analysis into a structured recruitment decision
-framework.
+Phase 2 converts succession analysis into a structured recruitment decision framework.
 
 Candidates are evaluated using several decision dimensions, including:
 
@@ -204,17 +247,15 @@ PRIORITY TARGET
 STRONG SHORTLIST
 ```
 
-The frozen Phase 2 executive shortlist contains nine candidates across the
-three succession problems.
+The frozen Phase 2 executive shortlist contains nine candidates across the three succession problems.
 
 ---
 
-## 6. Phase 3 — Scouting & Decision Validation
+## Phase 3 — Scouting & Decision Validation
 
 Phase 3 converts analytical uncertainty into explicit scouting work.
 
-Rather than treating uncertainty as an abstract model limitation, the system
-generates validation flags and associated scouting questions.
+Rather than treating uncertainty as an abstract model limitation, the system generates validation flags and associated scouting questions.
 
 Examples include:
 
@@ -224,8 +265,7 @@ Examples include:
 - young-player projection;
 - decision uplift.
 
-These flags determine the next recommended action for each candidate,
-including:
+These flags determine the next recommended action for each candidate, including:
 
 ```text
 TACTICAL VALIDATION
@@ -234,17 +274,15 @@ LIVE / VIDEO SCOUTING
 PROGRESS TO SCOUTING
 ```
 
-Phase 3 therefore acts as the bridge between statistical recruitment analysis
-and football scouting.
+Phase 3 therefore acts as the bridge between statistical recruitment analysis and football scouting.
 
 ---
 
-## 7. Phase 4 — Human Scouting Decision Gate
+## Phase 4 — Human Scouting Decision Gate
 
 Phase 4 introduces the human validation layer.
 
-The system generates a structured scouting evidence template for every
-executive candidate.
+The system generates a structured scouting evidence template for every executive candidate.
 
 The scouting framework uses a five-point scale:
 
@@ -265,25 +303,21 @@ HOLD
 REJECT
 ```
 
-However, a recommendation is only eligible to progress when the required
-human scouting evidence has been completed.
+However, a recommendation is only eligible to progress when the required human scouting evidence has been completed.
 
 Until that evidence exists, the final decision gate remains blocked.
 
-This prevents analytical outputs from being misrepresented as completed
-football recruitment decisions.
+This prevents analytical outputs from being misrepresented as completed football recruitment decisions.
 
 ---
 
-## 8. Phase 5 — Executive Reporting
+## Phase 5 — Executive Reporting
 
-Phase 5 converts the preceding analytical stages into concise decision-support
-outputs.
+Phase 5 converts the preceding analytical stages into concise decision-support outputs.
 
-### Phase 5.1 — Executive Master Summary
+### Executive Master Summary
 
-The executive master summary combines the key information from frozen
-Phases 2, 3, and 4.
+The executive master summary combines the key information from frozen Phases 2, 3, and 4.
 
 It provides a single view of:
 
@@ -303,15 +337,14 @@ At the current project state, all nine executive candidates remain:
 AWAITING SCOUTING VALIDATION
 ```
 
-This is intentional because no completed human scouting evidence has been
-entered.
+This is intentional because no completed human scouting evidence has been entered.
 
-### Phase 5.2 — Succession Briefs
+### Succession Briefs
 
 Individual executive briefs are generated for:
 
 - Anthony Gordon succession
-- Bruno Guimaraes succession
+- Bruno Guimarães succession
 - Sandro Tonali succession
 
 Each brief ranks the shortlisted candidates and communicates:
@@ -326,63 +359,31 @@ Each brief ranks the shortlisted candidates and communicates:
 
 ---
 
-## 9. Current Executive Shortlist
+## Validation Safeguards
 
-The current analytical shortlist is:
-
-### Anthony Gordon Succession
-
-1. Kristian Arnstad — PRIORITY TARGET
-2. Tobias Bech — STRONG SHORTLIST
-
-### Bruno Guimaraes Succession
-
-1. Thomas Jorgensen — PRIORITY TARGET
-2. Rihito Yamamoto — PRIORITY TARGET
-3. Dario Osorio — STRONG SHORTLIST
-
-### Sandro Tonali Succession
-
-1. Victor Froholdt — PRIORITY TARGET
-2. Kodai Sano — PRIORITY TARGET
-3. Irakli Yegoian — PRIORITY TARGET
-4. Max Ejdum — STRONG SHORTLIST
-
-These are analytical recruitment priorities, not final transfer
-recommendations.
-
----
-
-## 10. Validation Safeguards
-
-The project contains several safeguards against inappropriate interpretation
-of analytical results.
+The project contains several safeguards against inappropriate interpretation of analytical results.
 
 ### Evidence uncertainty
 
-Players with weaker evidence bases can be penalised or flagged for further
-validation.
+Players with weaker evidence bases can be penalised or flagged for further validation.
 
 ### Recruitment risk
 
-Recruitment uncertainty is represented explicitly rather than being hidden
-inside a single ranking score.
+Recruitment uncertainty is represented explicitly rather than being hidden inside a single ranking score.
 
 ### Human validation
 
-Candidates cannot pass the final recruitment gate without completed scouting
-evidence.
+Candidates cannot pass the final recruitment gate without completed scouting evidence.
 
 ### Frozen analytical phases
 
 Completed and QA-tested phases are stored as frozen versioned artifacts.
 
-This prevents later development work from silently changing previously
-validated results.
+This prevents later development work from silently changing previously validated results.
 
 ---
 
-## 11. Versioning & Frozen Models
+## Versioning & Frozen Models
 
 Validated phases are preserved in the `frozen/` directory.
 
@@ -395,14 +396,13 @@ frozen/
 └── phase4_v1_0/
 ```
 
-Each frozen phase contains the relevant scripts and/or outputs required to
-reproduce or audit that stage of the decision process.
+Each frozen phase contains the relevant scripts and/or outputs required to reproduce or audit that stage of the decision process.
 
 Frozen files are write-protected after validation.
 
 ---
 
-## 12. Key Project Outputs
+## Key Project Outputs
 
 Important outputs include:
 
@@ -432,7 +432,7 @@ data/outputs/phase5/succession_briefs/
 
 ---
 
-## 13. Quality Assurance
+## Quality Assurance
 
 Each major analytical phase contains dedicated QA checks.
 
@@ -452,12 +452,11 @@ Frozen versions are created only after the relevant phase passes QA.
 
 ---
 
-## 14. Reproducibility
+## Reproducibility
 
 The project is designed as a staged and auditable pipeline.
 
-Later phases consume validated outputs from earlier frozen phases rather than
-silently recreating historical decisions.
+Later phases consume validated outputs from earlier frozen phases rather than silently recreating historical decisions.
 
 This provides:
 
@@ -469,13 +468,11 @@ This provides:
 
 ---
 
-## 15. Interpretation of Results
+## Interpretation of Results
 
-The model should be interpreted as a recruitment decision-support framework,
-not as an automated transfer-selection system.
+The model should be interpreted as a recruitment decision-support framework, not as an automated transfer-selection system.
 
-A high-ranked candidate represents a player whose available statistical
-evidence and modelled characteristics justify greater recruitment attention.
+A high-ranked candidate represents a player whose available statistical evidence and modelled characteristics justify greater recruitment attention.
 
 It does not prove that the player:
 
@@ -488,49 +485,37 @@ It does not prove that the player:
 - will maintain historical performance;
 - should automatically be signed.
 
-Those questions require additional football, financial, medical, contractual,
-and human assessment.
+Those questions require additional football, financial, medical, contractual, and human assessment.
 
 ---
 
-## 16. Limitations
-
-Important limitations include:
+## Limitations
 
 ### Statistical profile limitations
 
-Player statistics do not fully represent tactical responsibilities,
-decision-making, off-ball behaviour, communication, or contextual role.
+Player statistics do not fully represent tactical responsibilities, decision-making, off-ball behaviour, communication, or contextual role.
 
 ### Competition effects
 
-Performance across leagues and teams may not translate directly to the
-Premier League.
+Performance across leagues and teams may not translate directly to the Premier League.
 
 ### Sample-size uncertainty
 
-Young players and players with limited minutes may have less stable
-statistical profiles.
+Young players and players with limited minutes may have less stable statistical profiles.
 
 ### Recruitment environment
 
-Transfer fees, wages, contract status, availability, injuries, registration
-rules, and player preference are not fully represented by the analytical
-model.
+Transfer fees, wages, contract status, availability, injuries, registration rules, and player preference are not fully represented by the analytical model.
 
 ### Human scouting requirement
 
-The project deliberately leaves final recruitment decisions unresolved until
-human scouting evidence is supplied.
+The project deliberately leaves final recruitment decisions unresolved until human scouting evidence is supplied.
 
-This is a feature of the methodology rather than an incomplete analytical
-result.
+This is a feature of the methodology rather than an incomplete analytical result.
 
 ---
 
-## 17. Project Status
-
-Current status:
+## Project Status
 
 ```text
 Phase 1 — Succession analytics             COMPLETE
@@ -546,21 +531,7 @@ Phase 5 integration QA is complete and the v1.0 analytical pipeline is frozen.
 
 ---
 
-## 18. Final Principle
-
-The project follows a simple recruitment philosophy:
-
-> Analytics should narrow the search, quantify uncertainty, and improve
-> decisions — not remove the need for football judgement.
-
-The final recruitment decision remains a human decision supported by
-structured analytical evidence.
-
-
-
----
-
-## Public repository and data provenance
+## Public Repository and Data Provenance
 
 This repository is the public portfolio edition of the Newcastle United Recruitment & Succession Analytics project.
 
