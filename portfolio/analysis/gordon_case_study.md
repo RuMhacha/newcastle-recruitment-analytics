@@ -23,6 +23,15 @@ The initial analysis produced an important distinction: the player who most clos
 
 ## Initial Analysis
 
+The initial succession model identified several plausible statistical replacements for Gordon, but it did not produce a single obvious successor.
+
+Shunsuke Mito and Daan Rots recorded the highest initial succession scores at 68.1, combining strong role quality with profiles that compared favourably with Gordon. Kristian Arnstad followed at 64.5, while Rafiki Said, Ramiz Harakaté and Olti Hyseni formed a closely grouped second tier.
+
+This initial ranking was useful for identifying players whose on-pitch profiles warranted further investigation, but it treated the statistical result as stronger evidence than the underlying data necessarily justified. Similar scores could be supported by different sample sizes, levels of evidence and recruitment uncertainty.
+
+The initial output was therefore treated as a candidate-generation stage rather than the final shortlist. A second decision layer was introduced to test whether the apparent statistical fit remained convincing once evidence strength, development potential and recruitment risk were considered.
+
+
 ## Decision Analysis
 
 ![Anthony Gordon succession candidates — initial suitability versus final risk-adjusted decision score](../figures/gordon_decision_comparison.png)
@@ -31,6 +40,28 @@ The decision layer materially reshaped the initial shortlist. Candidates shown i
 
 ## Key Finding
 
+The strongest statistical match was not the strongest overall recruitment priority.
+
+Shunsuke Mito produced the highest similarity score to Gordon and shared the highest initial succession score, but Kristian Arnstad moved ahead once evidence strength, development potential and recruitment risk were incorporated into the decision model.
+
+This shows that a strong statistical resemblance alone is not enough to justify recruitment priority. A candidate becomes more decision-ready when the performance case is also supported by stronger evidence and lower uncertainty.
+
+
 ## Recommendation
 
+Newcastle should prioritise Kristian Arnstad for deeper recruitment investigation, with Tobias Bech retained as a strong secondary option.
+
+Arnstad combines a credible statistical fit with the strongest risk-adjusted score in the candidate group, making him the clearest candidate for progression to detailed scouting, contextual performance review and recruitment feasibility assessment. Bech also strengthens materially after adjustment and warrants further investigation as an alternative profile.
+
+Shunsuke Mito and Daan Rots should remain on the wider scouting list rather than being treated as immediate priorities. Their strong initial statistical cases weaken once evidence confidence and recruitment risk are considered, illustrating why similarity rankings should be used as the start of the recruitment process rather than the final decision.
+
+
 ## Limitations
+
+This analysis is designed to support candidate prioritisation rather than produce a definitive transfer recommendation. Statistical similarity cannot fully capture tactical fit, positional flexibility, physical attributes, personality or a player's ability to adapt to Newcastle's playing environment.
+
+The evidence is also dependent on the available performance sample. Players with fewer minutes or less comparable competition may carry greater uncertainty, while differences between leagues, teams and tactical roles can affect the interpretation of otherwise similar metrics.
+
+Recruitment feasibility is only represented at a high level. Transfer cost, wages, contract situation, availability, injury history and the player's willingness to move would require separate assessment before any recruitment decision.
+
+The output should therefore be treated as a structured shortlist for further scouting and due diligence, combining quantitative evidence with video analysis, live scouting and financial assessment before a final recommendation is made.
